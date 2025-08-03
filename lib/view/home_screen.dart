@@ -1,6 +1,10 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:surveyor_app/controller/survey_form_controller.dart';
+
+import 'form_screen.dart';
 
 class HomeScreen extends StatelessWidget {
    HomeScreen({super.key});
@@ -22,8 +26,9 @@ class HomeScreen extends StatelessWidget {
               title: Text(form.formName ?? "Unnamed Form"),
               subtitle: Text("Form ID: ${form.id}"),
               onTap: () {
-                // Navigate to form page or show details
-                print("Tapped ${form.formName}");
+
+                Get.to(()=>FormScreen(form: form,));
+                log("Tapped ${form.formName}");
               },
             );
           },

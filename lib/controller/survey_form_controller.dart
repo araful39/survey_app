@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:get/get.dart';
 import 'package:surveyor_app/api_service/surver_form_service.dart';
 import 'package:surveyor_app/model/survey_form_model.dart';
@@ -18,7 +20,7 @@ class SurveyFormController extends GetxController {
         formList.add(form);
       }
     } catch (e) {
-      print("Error loading forms: $e");
+      log("Error loading forms: $e");
     }
   }
 }
