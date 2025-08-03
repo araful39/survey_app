@@ -1,16 +1,22 @@
 # surveyor_app
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+Here's a short summary:
 
-A few resources to get you started if this is your first Flutter project:
+Survey app flow with GetX:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Load JSON → parse to model
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Build form dynamically based on model
+
+User inputs stored in GetX controller (reactive map)
+
+Validate form on submit
+
+Save or pass data to result page using GetX navigation
+
+
+apk: https://drive.google.com/file/d/10VrDzsb1NCuypCAd7Omo7rwkrrBowpus/view?usp=sharing
+
+
