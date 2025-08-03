@@ -10,12 +10,12 @@ class ImageUploadWidget extends StatelessWidget {
   final VoidCallback pickImage;
 
   const ImageUploadWidget({
-    Key? key,
+    super.key,
     required this.field,
     required this.imageFile,
     required this.onImageSelected,
     required this.pickImage,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
